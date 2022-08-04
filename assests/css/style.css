@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+
+.clear {
+    clear: both;
+}
+
+.text-while {
+    color: #fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+#header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    position: relative;
+    display: inline-block;  
+    line-height: 46px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+.header-search-icon:hover {
+    background-color: #f44336;
+}
+
+#nav > li > a {
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+    display: block;
+    color: #fff;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+#nav li:hover .header-down {
+    color: #000;
+}
+
+.header-down {
+    position: absolute;
+    position: absolute;
+    font-size: 12px;
+    padding: 14px 3px;
+}
+
+
+
+.header-search-icon, .mobile-menu-btn {
+    float: right;
+}
+
+.mobile-menu-btn {
+    /* background-color: #ccc; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+.search-btn,.menu-icon {
+    color: #fff;
+    /* color: #fff; */
+    padding: 15px 26px;
+    text-align: center;
+}
+
+#slider {
+    position: relative;
+    margin-top: 25px;
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 47px;
+}
+
+#slider .text-heading {
+    color: #fff;
+    font-weight: 500;
+}
+
+#slider .text-decription {
+    color: #fff;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 24px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    background: #000;
+}
+
+.ticket-list {
+    margin-top: 45px;
+    list-style: none;
+    background-color: #fff;
+}
+
+.ticket-list li {
+    padding: 8px 16px;
+    color: #757575;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.place-list {
+    margin-top: 16px;
+    /* margin-left: -8px;
+    margin-right: -8px; */
+    margin-bottom: 48px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.place-drcs {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    color: #757575;
+    margin-top: 15px;
+    font-size: 15px;
+
+}
+
+.place-text {
+    line-height: 1.4;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.place-buy-btn {
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 16px;  
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-inf a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-inf a:hover{
+    opacity: 1;
+
+}
+
+
+.contact-inf {
+    font-size: 18px;
+    line-height: 1.5;   
+}
+
+.contact-icon {
+    width: 30px;
+    /* font-size: 18px; */
+    /* display: inline-block;   */
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 9px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    float: right;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.map-section {
+    
+}
+
+.map-section img {
+    width: 100%;
+    opacity: 0.6;
+    margin-top: 80px;
+    filter: grayscale(50%); 
+}
+
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.socials-list {
+}
+
+.socials-list a {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.socials-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.coppyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.coppyright a {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
